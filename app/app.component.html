@@ -1,0 +1,16 @@
+<h2>Angular ngIf with then and else</h2>
+<div *ngIf="courses.length>0; then coursesList else noCourse"></div>
+<ng-template #coursesList>
+  <h4>List of Courses ({{courses.length}})</h4>
+  <p>{{courses[0]}}</p>
+  <p>{{courses[1]}}</p>
+  <p>{{courses[2]}}</p>
+  <p>{{courses[3]}}</p>
+  <p>{{courses[4]}}</p>
+  <p>{{courses[5]}}</p>
+  <p>{{courses[6]}}</p>
+  <p>{{courses[7]}}</p>
+</ng-template>
+<ng-template #noCourse>
+  <h4>No courses</h4>
+</ng-template>
